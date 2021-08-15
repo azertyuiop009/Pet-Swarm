@@ -1,0 +1,37 @@
+if mob == "Evil Shroom(1)" then
+for _, Food in pairs(game:GetService("Workspace").Zones.Zone1.Enemies:GetChildren("Part"))do
+if game.Workspace.AutoChange:FindFirstChild("On") and Food.Name == "Evil Shroom" then
+				local A_1 = "AttackEnemy"
+				local A_2 = Food
+				for _, Pets in pairs(game:GetService("Workspace")[player.Name].Pets:GetChildren())do
+					local A_3 = Pets
+					local Event = game:GetService("ReplicatedStorage").Remotes.Functions.CombatRF
+			Event:InvokeServer(A_1, A_2, A_3)
+		end
+	end
+  end
+elseif mob == "Evil Yeti(5)" then
+for _, Food in pairs(game:GetService("Workspace").Zones.Zone1.Enemies:GetChildren("Part"))do
+if game.Workspace.AutoChange:FindFirstChild("On") and Food.Name == "Evil Foot" then
+				local A_1 = "AttackEnemy"
+				local A_2 = Food
+				for _, Pets in pairs(game:GetService("Workspace")[player.Name].Pets:GetChildren())do
+					local A_3 = Pets
+					local Event = game:GetService("ReplicatedStorage").Remotes.Functions.CombatRF
+			Event:InvokeServer(A_1, A_2, A_3)
+		end
+	end
+  end
+elseif mob == "Deermon(10)" then
+for _, Food in pairs(game:GetService("Workspace").Zones.Zone1.Enemies:GetChildren("Part"))do
+if game.Workspace.AutoChange:FindFirstChild("On") and Food.Name == "Deermon" then
+				local A_1 = "AttackEnemy"
+				local A_2 = Food
+				for _, Pets in pairs(game:GetService("Workspace")[player.Name].Pets:GetChildren())do
+					local A_3 = Pets
+					local Event = game:GetService("ReplicatedStorage").Remotes.Functions.CombatRF
+			Event:InvokeServer(A_1, A_2, A_3)
+		end
+	end
+  end
+end
